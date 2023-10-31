@@ -1,0 +1,253 @@
+.header {
+  position: relative;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 600px;
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  padding: 0 20px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+.header svg {
+  cursor: pointer;
+}
+.header ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+ul .mi__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  background-color: #ff6900;
+  border-radius: 10px;
+}
+.header ul .mi__icon .mi {
+  position: absolute;
+  top: 7px;
+  transition: 0.2s;
+}
+.header ul .mi__icon .home {
+  position: absolute;
+  top: -43px;
+  background-color: #ff6900 !important;
+  transition: 0.2s;
+}
+.header ul .mi__icon a {
+  font-size: 20px;
+}
+.header ul .mi__icon svg {
+  color: #fff;
+}
+.header ul li a {
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+}
+.header ul .icon svg {
+  font-size: 20px;
+}
+.phone {
+  background-color: #fff;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  position: absolute;
+  left: 0;
+  transition: 0.5s;
+}
+.phone h1 {
+  font-weight: 600;
+  font-size: 25px;
+}
+.phone h1:nth-child(1) {
+  color: #ff6900;
+}
+.smartHome {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.smartHome .cart,
+.life__style .cart {
+  transition: 0.5s;
+}
+
+.smartHome .cart:hover {
+  color: #ff6900;
+}
+.life__style {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  background-color: #fff;
+  transition: 0.5s;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.life__style .cart:hover {
+  color: #ff6900;
+}
+.smartHome .cart,
+.life__style .cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.smartHome .cart:nth-child(1) svg {
+  transform: rotate(180deg);
+}
+.smartHome .cart svg,
+.life__style .cart svg {
+  font-size: 40px;
+}
+.header ul .icon2 {
+  position: relative;
+}
+.header .sign {
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  width: 70px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+}
+.header .sign p {
+  padding: 5px 8px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.header .sign p:hover {
+  opacity: 0.5;
+}
+.allSearch {
+  width: 100%;
+  height: 80vh;
+  background-color: #fff;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  /* position: relative; */
+  transition: 0.5s;
+}
+.allSearch .search {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.allSearch .search input {
+  width: 50vw;
+  height: 45px;
+  border: 2px solid #ff6900;
+  border-radius: 20px;
+  text-indent: 30px;
+  font-size: 20px;
+  padding: 0 10px 0;
+}
+.allSearch .search input:focus {
+  border: 1px solid #ff6900;
+}
+.allSearch .search button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+}
+.allSearch .search button svg {
+  font-size: 30px;
+  color: #ff6900;
+}
+.allSearch .search ul {
+  position: absolute;
+  top: 15px;
+  left: 35px;
+}
+.navbar ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.navbar ul li:nth-child(2)::after,
+.navbar ul li:nth-child(3)::after,
+.navbar ul li:nth-child(4)::after,
+.navbar ul:nth-child(2) li:nth-child(1)::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #ff6900;
+  transform-origin: left;
+  transform: scale(0);
+  transition: 0.5s;
+}
+.navbar ul li:hover::after {
+  transform: scale(1);
+}
+.navbar ul button {
+  border: none;
+  background-color: transparent;
+}
+.navbar ul button svg {
+  font-size: 22px;
+}
+.allSearch .search__value {
+  width: 50vw;
+  height: 300px;
+  background-color: #333;
+  border-radius: 20px;
+  position: absolute;
+  top: 144px;
+  padding: 50px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 5px;
+}
+.allSearch .search__value p {
+  display: inline-block;
+  font-size: 22px;
+}
